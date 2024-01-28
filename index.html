@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio7 Dance Studio</title>
+    <link rel="stylesheet" href="studio7.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">Studio7</h1>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#team">Instructors</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <section id="home" class="hero">
+            <div class="hero-text">
+                <h1>Welcome to Studio7</h1>
+                <p>Where Passion Meets Rhythm and Movement</p>
+                <a href="https://drive.google.com/uc?export=download&id=1QqYHfkWX3CgVQs-hGN-q-ScP4_h3KY1U" class="cta-btn">Explore Classes</a>
+            </div>
+        </section>
+    </header>
+
+    <main>
+            <section id="services" class="services">
+                <div class="container">
+                    <h2>Our Services</h2>
+                    <div class="service-list">
+                        <div class="service">
+                            <h3>Dance Styles</h3>
+                            <ul>
+                            <li>Modern</li>
+                            <li>Contemporary</li>
+                            <li>Disco Jazz</li>
+                            <li>Hip Hop</li>
+                            <li>Beginner Ballet</li>
+                            </ul>
+                        </div>
+
+                        <div class="service">
+                            <img src="studio 7 pic 2.jpg" alt="register pic">
+                        </div>
+
+                        <div class="service">
+                            <h3>For more information </h3>
+                           
+                               <a href="https://drive.google.com/uc?export=download&id=1QqYHfkWX3CgVQs-hGN-q-ScP4_h3KY1U">
+                                click here</a>
+                                <br>
+                                 <p>
+                                <i>Prices, timetable, terms and conditions are all included in the document above</i>
+                    
+                                </p>
+                        </div>
+                        
+                            <video class="video-bg" autoplay muted loop>
+                             <source src="VID-20240112-WA0002.mp4" type="video/mp4" >
+                            </video>
+                    
+                        <!-- Add more services as needed -->
+                    </div>
+                </div>
+            </section>
+    
+            <section id="team" class="team">
+                <div class="container">
+                    <h2>Our Team</h2>
+
+                    <div class="team-list">
+                        <div class="team-member">
+                            <img src="Wilma.jpg" alt="instructor 1">
+                            <h3>Wilma Van Niekerk</h3> 
+                            <p> <b>Owner</b> 
+                                <br>
+                              Disco Jazz,Ballet Junior & Teen Contemporary & modern</p>
+                        </div>
+
+                        <div class="team-member">
+                            <img src="Jane.jpg" alt="instructor 2">
+                            <h3>Jane Van Niekerk</h3>
+                            <p>Senior & Adult Contemporary,Lyrical, Modern, Ballet & Jazz.</p>
+                        </div>
+
+                        <div class="team-member">
+                            <img src="Werno.jpg" alt="instructor 2">
+                            <h3>Werno Van Niekerk</h3>
+                            <p>Senior & Adult Hip Hop.</p>
+                        </div>
+
+                        <div class="team-member">
+                            <img src="Caitlin.jpg" alt="instructor 2">
+                            <h3>Caitlin Wilken</h3>
+                            <p>Junior & Teen Hip Hop.</p>
+                        </div>
+
+                        <div class="team-member">
+                            <img src="Enja.jpg" alt="instructor 2">
+                            <h3>Enja Pistorius</h3>
+                            <p>Petit ballet, junior Contemporary & Modern.</p>
+                        </div>
+
+                        <!-- Add more team members as needed -->
+                    </div>
+                </div>
+            </section>
+    
+           
+
+            <section id="gallery" class="gallery">
+                <div class="full-img" id="fullImgbox">
+                    <img src="grid img/img1.jpg" id="fullImg">
+                    <span onclick="closefullimg()">x</span>
+                 </div>
+
+                <div class="container">
+                    <h2>Photo Gallery</h2>
+                    <!-- Gallery images go here -->
+                    <img src="grid img/img1.jpg" onclick="openfullimg(this.src)">
+                    <img src="grid img/img2.jpg" onclick="openfullimg(this.src)">
+                    <img src="grid img/img3.jpg" onclick="openfullimg(this.src)">
+                    <img src="grid img/img4.jpg" onclick="openfullimg(this.src)">
+                    <img src="grid img/img5.jpg" onclick="openfullimg(this.src)">
+                    <img src="grid img/img6.jpg" onclick="openfullimg(this.src)">
+                    <img src="grid img/img7.jpg" onclick="openfullimg(this.src)">
+                    <img src="grid img/img8.jpg" onclick="openfullimg(this.src)">
+                </div>
+            </section>
+
+            <script>
+
+                var fullImgbox = document.getElementById("fullImgbox")
+                var fullImg = document.getElementById("fullImg")
+
+                function openfullimg(pic){
+                    fullImgbox.style.display = "flex";
+                    fullImg.src = pic
+                }
+
+                function closefullimg(){
+                    fullImgbox.style.display = "none";
+                }
+
+            </script>
+
+                <div class="cu"> 
+                    <h2>Register today!!</h2>
+
+                    <br>
+                    <div class="reg">
+                    <img src="studio 7 pic 2.jpg" alt="register">
+                    </div>
+                    <div class="reg">
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                             
+                            <input type="hidden" name="access_key" value="a4f01638-9080-42a7-a3d4-a1bca1503bf4">
+
+                            <label for="name" >Name:</label>
+                            <input name="name" type="text"id="name">
+                            <br>
+                            <label for="email">Email:</label>
+                            <input name="email" type="email" id="email">
+                            <br>
+                            <label name="number" for="tel">Phone Number:</label>
+                            <input type="tel" id="tel">
+                            <br>
+                            
+                            <textarea name="message" id="text" placeholder="I would like to register.">I would like to register.</textarea>
+                            <br>
+                            <button type="submit">Send</button>
+                        </form>
+                    </div>
+
+
+                </div>
+
+    
+            <section id="contact" class="contact">
+                <div class="container">
+                    
+                    <h2>Contact Us</h2>
+                    <p>Get in touch with us to schedule an appointment or inquire about our services.</p>
+                    <!-- Contact form or contact information goes here -->
+                    <p>
+                        <br>
+                      Email: <a href="mailto:studio7d2p@gmail.com">studio7d2p@gmail.com</a>
+                      <br>
+                      Telephone Number: <a href="tel:+27 83 951 1252">+27 83 951 1252</a>
+                      <br>
+                    </p>
+                    <br>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3577.957276398951!2d28.260417074414818!3d-26.263049977040385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e9518488a9fdd81%3A0x9605bc28fbb4ecd4!2sStudio%207!5e0!3m2!1sen!2sza!4v1702132746720!5m2!1sen!2sza" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                </div>
+            </section>
+        
+        <!-- Other Sections -->
+        <!-- Add your content here -->
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Studio7 Dance Studio - created by <i>Njabulo Kubheka</i></p>
+    </footer>
+</body>
+
+</html>
